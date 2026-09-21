@@ -34,6 +34,7 @@ from .notes import (
     FIX_FOR_CATEGORY,
     classify_notes,
 )
+from .actions import recommend, systemic
 from .pipeline import Analysis, analyse
 from .validation import validate
 
@@ -139,6 +140,8 @@ def build_payload(analysis: Analysis, top_n: int = 15) -> dict:
             "weeks": int(analysis.shifts["week_start"].nunique()),
         },
         "headline": _headline(analysis, classified, costed, top_n),
+        "actions": recommend(analysis, top_n),
+        "systemic": systemic(analysis, classified),
         "at_risk": _at_risk(analysis, employees, sites, top_n),
         "reasons": _reasons(classified, costed, export),
         "sites": _sites(classified, costed, export, sites),

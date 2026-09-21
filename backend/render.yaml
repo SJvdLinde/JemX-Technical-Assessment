@@ -1,0 +1,14 @@
+# Free-tier deploy for the API. Note: the free instance sleeps after inactivity
+# and takes ~50s to wake, which is an ugly first impression in a demo. Worth
+# hitting the URL a minute before showing it.
+services:
+  - type: web
+    name: jem-ops-api
+    runtime: python
+    plan: free
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.api:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.12"
