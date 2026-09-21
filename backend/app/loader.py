@@ -128,8 +128,15 @@ def load_export(
             df = _read_csv(source)
         except ExportError:
             raise
+        except pd.errors.EmptyDataError as exc:
+            raise ExportError(
+                f"{table}.csv appears to be empty — it has no header row. "
+                "Check the export downloaded fully."
+            ) from exc
         except Exception as exc:  # pragma: no cover - pandas raises many types
-            raise ExportError(f"Could not read {table}.csv: {exc}") from exc
+            raise ExportError(
+                f"Could not read {table}.csv. It may not be a valid CSV file. ({exc})"
+            ) from exc
 
         if df.empty:
             if table in REQUIRED_FILES:
