@@ -1,0 +1,214 @@
+employee_id,full_name,id_number,role,primary_site_id,shift_pattern,contract_ordinary_hours,employment_type
+E1001,Mpho Mabaso,040402XXXX000,Cleaner,ST-01,day,45,Fixed-term
+E1002,Xolani Ngcobo,811007XXXX001,Kitchen Assistant,ST-02,day,45,Permanent
+E1003,Portia Mahlangu,840820XXXX002,Cleaner,ST-03,day,45,Permanent
+E1004,Chantal Adams,020310XXXX003,Security Guard,ST-03,night,45,Permanent
+E1005,Lerato Mabaso,020903XXXX004,Cleaner,ST-05,day,45,Permanent
+E1006,Shaun Zulu,020703XXXX005,Security Guard,ST-04,day,45,Fixed-term
+E1007,Sibusiso Baloyi,020521XXXX006,Security Guard,ST-06,day,45,Permanent
+E1008,Nadia Fourie,811026XXXX007,Security Guard,ST-03,day,45,Permanent
+E1009,Palesa Sibiya,010515XXXX008,Security Guard,ST-02,day,45,Fixed-term
+E1010,Charmaine Van Wyk,791220XXXX009,Kitchen Assistant,ST-01,day,45,Fixed-term
+E1011,Gift September,000702XXXX010,Cleaner,ST-01,day,45,Permanent
+E1012,Kagiso Sibiya,001202XXXX011,Driver,ST-04,day,45,Permanent
+E1013,Given Sithole,000413XXXX012,Security Guard,ST-04,day,45,Permanent
+E1014,Chantal Dlamini,980207XXXX013,Security Guard,ST-03,day,45,Permanent
+E1015,Katlego Hendricks,900505XXXX014,Driver,ST-05,day,45,Permanent
+E1016,Pieter Mahlangu,041214XXXX015,Supervisor,ST-04,day,45,Permanent
+E1017,Mandla September,020605XXXX016,Security Guard,ST-05,day,45,Fixed-term
+E1018,Andile Sithole,900518XXXX017,Driver,ST-01,day,45,Permanent
+E1019,Lindiwe Dlamini,741107XXXX018,Kitchen Assistant,ST-05,day,45,Permanent
+E1020,Lucky Van Wyk,020324XXXX019,Kitchen Assistant,ST-03,day,45,Fixed-term
+E1021,Katlego Jacobs,881227XXXX020,Security Guard,ST-04,day,45,Permanent
+E1022,Sipho Maluleke,711117XXXX021,Supervisor,ST-06,day,45,Fixed-term
+E1023,Palesa Jacobs,021220XXXX022,Cleaner,ST-01,day,45,Permanent
+E1024,Thabo Zulu,021124XXXX023,Cleaner,ST-01,day,45,Fixed-term
+E1025,Refilwe Motaung,000917XXXX024,Driver,ST-02,day,45,Permanent
+E1026,Mpho Molefe,040723XXXX025,Security Guard,ST-05,day,45,Permanent
+E1027,Nomsa Sibiya,710617XXXX026,Cleaner,ST-06,day,45,Fixed-term
+E1028,Sanele Ndlovu,040520XXXX027,Supervisor,ST-01,day,45,Fixed-term
+E1029,Zanele Mahlangu,700715XXXX028,Kitchen Assistant,ST-04,day,45,Permanent
+E1030,Sibusiso Molefe,950516XXXX029,Cleaner,ST-03,day,45,Permanent
+E1031,Musa Molefe,840221XXXX030,Driver,ST-05,day,45,Permanent
+E1032,Chantal Ndlovu,811006XXXX031,Kitchen Assistant,ST-01,day,45,Fixed-term
+E1033,Pieter Pillay,910212XXXX032,Supervisor,ST-01,day,45,Fixed-term
+E1034,Sanele Fourie,040525XXXX033,Driver,ST-02,day,45,Fixed-term
+E1035,Tshepo Motaung,030204XXXX034,Security Guard,ST-01,day,45,Permanent
+E1036,T. Motaung,030204XXXX034,Security Guard,ST-03,day,45,Fixed-term
+E1037,Sipho Nkosi,750605XXXX035,Security Guard,ST-03,night,45,Fixed-term
+E1038,Tshepo Molefe,031128XXXX036,Security Guard,ST-06,day,45,Fixed-term
+E1039,Pieter Naidoo,021215XXXX037,Kitchen Assistant,ST-04,day,45,Permanent
+E1040,Sindiswa Naidoo,870314XXXX038,Supervisor,ST-03,day,45,Permanent
+E1041,Yusuf Mavuso,020515XXXX039,Driver,ST-03,day,45,Permanent
+E1042,Pieter Khumalo,860809XXXX040,Security Guard,ST-03,day,45,Fixed-term
+E1043,Portia Sithole,950223XXXX041,Kitchen Assistant,ST-03,day,45,Permanent
+E1044,Mandla Sithole,700821XXXX042,Security Guard,ST-02,night,45,Fixed-term
+E1045,Dineo Mavuso,800123XXXX043,Kitchen Assistant,ST-05,day,45,Permanent
+E1046,Lindiwe Mabaso,020217XXXX044,Cleaner,ST-03,day,45,Permanent
+E1047,Riaan Tshabalala,830204XXXX045,Driver,ST-06,day,45,Fixed-term
+E1048,Neo Ngcobo,040327XXXX046,Supervisor,ST-01,day,45,Permanent
+E1049,Anele Mahlangu,020409XXXX047,Supervisor,ST-01,day,45,Permanent
+E1050,Precious Mthembu,961116XXXX048,Security Guard,ST-01,day,45,Permanent
+E1051,Johannes Mavuso,920618XXXX049,Kitchen Assistant,ST-06,day,45,Fixed-term
+E1052,Pieter Mabaso,750806XXXX050,Supervisor,ST-01,day,45,Permanent
+E1053,Precious Fourie,850726XXXX051,Security Guard,ST-01,night,45,Permanent
+E1054,Thabo Motaung,710312XXXX052,Kitchen Assistant,ST-03,day,45,Fixed-term
+E1055,Lindiwe Nkosi,771123XXXX053,Security Guard,ST-06,night,45,Fixed-term
+E1056,Sindiswa Khumalo,840420XXXX054,Supervisor,ST-03,day,45,Permanent
+E1057,Bongani Dlamini,890520XXXX055,Driver,ST-01,day,45,Permanent
+E1058,Ayanda Naidoo,811002XXXX056,Supervisor,ST-04,day,45,Permanent
+E1059,Kagiso Radebe,761012XXXX057,Kitchen Assistant,ST-05,day,45,Fixed-term
+E1060,Gift Naidoo,720612XXXX058,Supervisor,ST-02,day,45,Permanent
+E1061,Pieter Baloyi,020118XXXX059,Supervisor,ST-01,day,45,Permanent
+E1062,Bongani Maluleke,040308XXXX060,Driver,ST-05,day,45,Permanent
+E1063,Dineo Ndlovu,031019XXXX061,Driver,ST-05,day,45,Permanent
+E1064,Nokuthula Manuel,040812XXXX062,Kitchen Assistant,ST-04,day,45,Permanent
+E1065,Anele Motaung,041203XXXX063,Security Guard,ST-03,night,45,Fixed-term
+E1066,Zanele Mavuso,850822XXXX064,Supervisor,ST-05,day,45,Permanent
+E1067,Zodwa Dlamini,000327XXXX065,Supervisor,ST-06,day,45,Permanent
+E1068,Nomsa Hendricks,041223XXXX066,Supervisor,ST-01,day,45,Permanent
+E1069,Sanele Sibiya,720409XXXX067,Security Guard,ST-05,day,45,Fixed-term
+E1070,Refilwe Van Wyk,011004XXXX068,Security Guard,ST-05,night,45,Permanent
+E1071,Sibusiso Mokoena,040924XXXX069,Supervisor,ST-02,day,45,Permanent
+E1072,Elrico Ndlovu,000225XXXX070,Driver,ST-06,day,45,Permanent
+E1073,Charmaine Hendricks,970102XXXX071,Driver,ST-01,day,45,Permanent
+E1074,Lucky Mahlangu,010714XXXX072,Cleaner,ST-05,day,45,Fixed-term
+E1075,Sibusiso Botha,741021XXXX073,Kitchen Assistant,ST-06,day,45,Permanent
+E1076,Yusuf Mabaso,040222XXXX074,Kitchen Assistant,ST-03,day,45,Permanent
+E1077,Nadia Van Wyk,010221XXXX075,Security Guard,ST-04,night,45,Permanent
+E1078,Gift Khumalo,021101XXXX076,Security Guard,ST-03,night,45,Permanent
+E1079,Musa Sithole,001119XXXX077,Driver,ST-05,day,45,Permanent
+E1080,Zodwa Motaung,790820XXXX078,Cleaner,ST-04,day,45,Permanent
+E1081,Neo Sibiya,961224XXXX079,Security Guard,ST-04,night,45,Permanent
+E1082,Sindiswa Baloyi,711117XXXX080,Security Guard,ST-04,day,45,Fixed-term
+E1083,Xolani Molefe,030503XXXX081,Security Guard,ST-05,night,45,Permanent
+E1084,Sanele Dlamini,000812XXXX082,Security Guard,ST-03,day,45,Permanent
+E1085,Nadia Naidoo,011215XXXX083,Cleaner,ST-04,day,45,Permanent
+E1086,Refilwe Nkosi,020324XXXX084,Security Guard,ST-03,night,45,Permanent
+E1087,Mandla Mthembu,000811XXXX085,Security Guard,ST-02,day,45,Permanent
+E1088,Mpho Hendricks,920901XXXX086,Kitchen Assistant,ST-05,day,45,Fixed-term
+E1089,Johannes Ngcobo,960720XXXX087,Kitchen Assistant,ST-02,day,45,Fixed-term
+E1090,Pieter Van Wyk,020922XXXX088,Cleaner,ST-05,day,45,Fixed-term
+E1091,P. Van Wyk,020922XXXX088,Cleaner,ST-06,day,45,Fixed-term
+E1092,Palesa Maluleke,040313XXXX089,Driver,ST-04,day,45,Permanent
+E1093,Ayanda Botha,861206XXXX090,Supervisor,ST-02,day,45,Fixed-term
+E1094,Sarah Nkosi,720601XXXX091,Security Guard,ST-04,night,45,Permanent
+E1095,Yusuf Mahlangu,000917XXXX092,Cleaner,ST-03,day,45,Permanent
+E1096,Zodwa Mavuso,741214XXXX093,Cleaner,ST-02,day,45,Permanent
+E1097,Busisiwe Jacobs,921219XXXX094,Supervisor,ST-02,day,45,Fixed-term
+E1098,B. Jacobs,921219XXXX094,Supervisor,ST-03,day,45,Fixed-term
+E1099,Portia Fourie,010118XXXX095,Security Guard,ST-02,night,45,Fixed-term
+E1100,Sarah Tshabalala,930901XXXX096,Cleaner,ST-06,day,45,Permanent
+E1101,Zanele Molefe,760627XXXX097,Security Guard,ST-06,day,45,Fixed-term
+E1102,Ayanda Sibiya,020517XXXX098,Kitchen Assistant,ST-04,day,45,Permanent
+E1103,Wandile Hendricks,041006XXXX099,Driver,ST-06,day,45,Permanent
+E1104,Given Tshabalala,041202XXXX100,Driver,ST-02,day,45,Permanent
+E1105,Zodwa Jacobs,041103XXXX101,Cleaner,ST-04,day,45,Fixed-term
+E1106,Portia Botha,021205XXXX102,Security Guard,ST-03,day,45,Permanent
+E1107,Sarah Mavuso,040116XXXX103,Cleaner,ST-04,day,45,Permanent
+E1108,Nadia Baloyi,000828XXXX104,Kitchen Assistant,ST-06,day,45,Fixed-term
+E1109,Wandile Ngcobo,041016XXXX105,Kitchen Assistant,ST-05,day,45,Permanent
+E1110,Riaan Jacobs,040915XXXX106,Kitchen Assistant,ST-06,day,45,Permanent
+E1111,Precious Pillay,020825XXXX107,Supervisor,ST-05,day,45,Permanent
+E1112,Palesa Naidoo,921216XXXX108,Security Guard,ST-05,day,45,Permanent
+E1113,Riaan Radebe,881207XXXX109,Cleaner,ST-02,day,45,Permanent
+E1114,Shaun Ndlovu,870812XXXX110,Supervisor,ST-01,day,45,Fixed-term
+E1115,Mpho Dlamini,711023XXXX111,Kitchen Assistant,ST-06,day,45,Permanent
+E1116,Given Mahlangu,030417XXXX112,Security Guard,ST-02,day,45,Permanent
+E1117,Busisiwe Adams,010923XXXX113,Driver,ST-03,day,45,Permanent
+E1118,Pieter Adams,970821XXXX114,Driver,ST-03,day,45,Permanent
+E1119,Musa Zulu,750218XXXX115,Kitchen Assistant,ST-02,day,45,Permanent
+E1120,Bongani Molefe,981101XXXX116,Kitchen Assistant,ST-01,day,45,Permanent
+E1121,Kagiso Molefe,000405XXXX117,Security Guard,ST-03,night,45,Permanent
+E1122,Dineo Tshabalala,720510XXXX118,Kitchen Assistant,ST-03,day,45,Fixed-term
+E1123,Charmaine Jacobs,880516XXXX119,Driver,ST-01,day,45,Permanent
+E1124,Thabo Hendricks,011016XXXX120,Supervisor,ST-04,day,45,Permanent
+E1125,Charmaine Mahlangu,020610XXXX121,Kitchen Assistant,ST-05,day,45,Permanent
+E1126,Lerato Motaung,000618XXXX122,Supervisor,ST-06,day,45,Permanent
+E1127,L. Motaung,000618XXXX122,Supervisor,ST-04,day,45,Fixed-term
+E1128,Themba Maluleke,741016XXXX123,Security Guard,ST-04,day,45,Permanent
+E1129,Lucky Mokoena,040823XXXX124,Cleaner,ST-04,day,45,Fixed-term
+E1130,Neo Ndlovu,711223XXXX125,Supervisor,ST-02,day,45,Permanent
+E1131,Musa Mthembu,910724XXXX126,Driver,ST-01,day,45,Permanent
+E1132,Kabelo Fourie,880318XXXX127,Security Guard,ST-02,night,45,Permanent
+E1133,Mpho Radebe,030828XXXX128,Cleaner,ST-01,day,45,Permanent
+E1134,Nadia Sithole,000702XXXX129,Cleaner,ST-04,day,45,Permanent
+E1135,Tshepo Pillay,821107XXXX130,Cleaner,ST-05,day,45,Permanent
+E1136,Precious Ndlovu,810516XXXX131,Cleaner,ST-03,day,45,Permanent
+E1137,Precious Baloyi,001218XXXX132,Kitchen Assistant,ST-05,day,45,Permanent
+E1138,Riaan Fourie,920715XXXX133,Security Guard,ST-01,night,45,Permanent
+E1139,Neo Sithole,021108XXXX134,Security Guard,ST-03,night,45,Permanent
+E1140,Zanele Mthembu,850712XXXX135,Kitchen Assistant,ST-04,day,45,Permanent
+E1141,Wandile Fourie,870920XXXX136,Security Guard,ST-01,day,45,Fixed-term
+E1142,Sipho Adams,971126XXXX137,Security Guard,ST-03,day,45,Permanent
+E1143,Wandile Mavuso,810906XXXX138,Cleaner,ST-02,day,45,Permanent
+E1144,Fatima Fourie,740802XXXX139,Cleaner,ST-06,day,45,Permanent
+E1145,Mpho Botha,861209XXXX140,Security Guard,ST-03,night,45,Permanent
+E1146,Tshepo Ngcobo,040708XXXX141,Security Guard,ST-04,night,45,Fixed-term
+E1147,Sindiswa Fourie,011126XXXX142,Security Guard,ST-01,day,45,Permanent
+E1148,Sanele Tshabalala,871121XXXX143,Cleaner,ST-01,day,45,Permanent
+E1149,Kagiso Mavuso,040316XXXX144,Security Guard,ST-05,day,45,Permanent
+E1150,Elrico Mabaso,040112XXXX145,Security Guard,ST-06,night,45,Permanent
+E1151,Fatima Botha,740227XXXX146,Cleaner,ST-04,day,45,Permanent
+E1152,Neo Van Wyk,000304XXXX147,Security Guard,ST-06,day,45,Permanent
+E1153,Mpho Van Wyk,870521XXXX148,Kitchen Assistant,ST-02,day,45,Permanent
+E1154,Lerato Manuel,860321XXXX149,Cleaner,ST-04,day,45,Fixed-term
+E1155,Gift Molefe,751207XXXX150,Security Guard,ST-03,day,45,Permanent
+E1156,Andile Pillay,800221XXXX151,Kitchen Assistant,ST-04,day,45,Permanent
+E1157,Sipho Botha,961226XXXX152,Security Guard,ST-05,day,45,Permanent
+E1158,Mpho Mokoena,040922XXXX153,Supervisor,ST-04,day,45,Permanent
+E1159,Nomsa Radebe,020512XXXX154,Security Guard,ST-06,night,45,Permanent
+E1160,Nomsa Van Wyk,850502XXXX155,Supervisor,ST-01,day,45,Permanent
+E1161,Xolani September,940913XXXX156,Security Guard,ST-05,day,45,Permanent
+E1162,Anele Naidoo,931223XXXX157,Driver,ST-03,day,45,Permanent
+E1163,Zodwa Khumalo,030316XXXX158,Kitchen Assistant,ST-01,day,45,Fixed-term
+E1164,Thabo Ndlovu,920603XXXX159,Kitchen Assistant,ST-04,day,45,Permanent
+E1165,Dineo Dlamini,000919XXXX160,Supervisor,ST-05,day,45,Permanent
+E1166,Yusuf Dlamini,920102XXXX161,Driver,ST-06,day,45,Permanent
+E1167,Mandla Mabaso,020413XXXX162,Security Guard,ST-02,day,45,Permanent
+E1168,Gift Radebe,780820XXXX163,Driver,ST-04,day,45,Permanent
+E1169,Pieter Sibiya,041120XXXX164,Cleaner,ST-05,day,45,Fixed-term
+E1170,Precious Maluleke,980425XXXX165,Driver,ST-05,day,45,Permanent
+E1171,Michelle Nkosi,020725XXXX166,Driver,ST-02,day,45,Permanent
+E1172,Sanele Baloyi,030328XXXX167,Supervisor,ST-04,day,45,Permanent
+E1173,Elrico Sithole,040104XXXX168,Supervisor,ST-05,day,45,Permanent
+E1174,Sindiswa Nkosi,770816XXXX169,Kitchen Assistant,ST-01,day,45,Permanent
+E1175,Nokuthula Zulu,821018XXXX170,Security Guard,ST-03,day,45,Permanent
+E1176,Katlego Motaung,040626XXXX171,Security Guard,ST-06,night,45,Permanent
+E1177,Sarah Naidoo,040413XXXX172,Supervisor,ST-02,day,45,Permanent
+E1178,Nokuthula Ngcobo,020607XXXX173,Supervisor,ST-03,day,45,Permanent
+E1179,Lucky Botha,021017XXXX174,Security Guard,ST-05,day,45,Permanent
+E1180,Tshepo Fourie,040319XXXX175,Cleaner,ST-06,day,45,Permanent
+E1181,Mandla Mavuso,970123XXXX176,Security Guard,ST-04,night,45,Permanent
+E1182,Xolani Dlamini,811019XXXX177,Security Guard,ST-05,night,45,Permanent
+E1183,Xolani Baloyi,880528XXXX178,Security Guard,ST-06,night,45,Fixed-term
+E1184,Portia Motaung,030608XXXX179,Security Guard,ST-06,night,45,Permanent
+E1185,Andile Cele,781202XXXX180,Supervisor,ST-04,day,45,Permanent
+E1186,Xolani Mavuso,000401XXXX181,Security Guard,ST-05,day,45,Permanent
+E1187,Elrico Jacobs,011003XXXX182,Kitchen Assistant,ST-04,day,45,Permanent
+E1188,Thabo Ngcobo,010822XXXX183,Security Guard,ST-02,day,45,Permanent
+E1189,Anele Dlamini,800319XXXX184,Cleaner,ST-03,day,45,Permanent
+E1190,Lerato Cele,760808XXXX185,Security Guard,ST-05,day,45,Permanent
+E1191,Riaan Mthembu,800502XXXX186,Cleaner,ST-01,day,45,Permanent
+E1192,Refilwe Tshabalala,850109XXXX187,Security Guard,ST-05,day,45,Permanent
+E1193,Lucky Sibiya,000212XXXX188,Kitchen Assistant,ST-03,day,45,Permanent
+E1194,L. Sibiya,000212XXXX188,Kitchen Assistant,ST-01,day,45,Fixed-term
+E1195,Ayanda Mokoena,840605XXXX189,Supervisor,ST-04,day,45,Permanent
+E1196,Andile Motaung,040318XXXX190,Security Guard,ST-04,night,45,Permanent
+E1197,Riaan Sibiya,030808XXXX191,Cleaner,ST-02,day,45,Permanent
+E1198,Andile Jacobs,701228XXXX192,Supervisor,ST-04,day,45,Permanent
+E1199,Elrico Pillay,011005XXXX193,Kitchen Assistant,ST-05,day,45,Permanent
+E1200,Sindiswa Maluleke,990617XXXX194,Cleaner,ST-04,day,45,Permanent
+E1201,Johannes Sithole,031022XXXX195,Security Guard,ST-06,day,45,Permanent
+E1202,Sindiswa Adams,030924XXXX196,Security Guard,ST-06,night,45,Fixed-term
+E1203,Musa Dlamini,011128XXXX197,Kitchen Assistant,ST-03,day,45,Permanent
+E1204,Sibusiso Ndlovu,910718XXXX198,Kitchen Assistant,ST-02,day,45,Fixed-term
+E1205,Andile Ngcobo,880415XXXX199,Kitchen Assistant,ST-02,day,45,Permanent
+E1206,Zanele Naidoo,790111XXXX200,Cleaner,ST-03,day,45,Fixed-term
+E1207,Sipho Motaung,001026XXXX201,Supervisor,ST-02,day,45,Permanent
+E1208,Pieter Mokoena,021203XXXX202,Kitchen Assistant,ST-01,day,45,Permanent
+E1209,Yusuf Molefe,030902XXXX203,Kitchen Assistant,ST-05,day,45,Permanent
+E1210,Musa Van Wyk,040219XXXX204,Supervisor,ST-03,day,45,Permanent
+E1211,Sarah Sibiya,000225XXXX205,Security Guard,ST-01,day,45,Permanent
+E1212,Portia Cele,020514XXXX206,Security Guard,ST-06,night,45,Permanent
+E1213,Themba Zulu,010413XXXX207,Kitchen Assistant,ST-03,day,45,Permanent
