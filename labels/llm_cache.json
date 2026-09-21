@@ -1,0 +1,46 @@
+{
+  "asdkj qwe zxcv": {
+    "category": "unclear",
+    "suggested": null
+  },
+  "client signed but honestly the relief just never came again": {
+    "category": "disputed_client_request",
+    "suggested": null
+  },
+  "die klient het gevra ons moet aanbly vir die geleentheid": {
+    "category": "client_requested",
+    "suggested": null
+  },
+  "flooding in the basement had to pump it out": {
+    "category": "other",
+    "suggested": "flooding"
+  },
+  "imoto yami ifile ngafika emva kwesikhathi": {
+    "category": "other",
+    "suggested": "vehicle_breakdown"
+  },
+  "load shedding no power stayed for security": {
+    "category": "other",
+    "suggested": "load_shedding"
+  },
+  "my relief bunked i had to stay till morning": {
+    "category": "relief_no_show",
+    "suggested": null
+  },
+  "protest outside the gate nobody could leave site": {
+    "category": "other",
+    "suggested": "protest"
+  },
+  "roadworks on the n1 whole team arrived two hours late": {
+    "category": "other",
+    "suggested": "roadworks"
+  },
+  "something nobody has ever written before qqq": {
+    "category": "unclear",
+    "suggested": null
+  },
+  "the vacuum packed up so everything took forever": {
+    "category": "equipment_failure",
+    "suggested": null
+  }
+}

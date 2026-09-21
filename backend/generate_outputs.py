@@ -11,6 +11,7 @@ import json
 
 from app import config as cfg
 from app.loader import load_export
+from app.notes import classify_notes, to_note_classifications_csv
 from app.pipeline import analyse, write_predictions
 
 
@@ -33,6 +34,23 @@ def main() -> None:
     flagged = int(predictions["will_breach"].sum())
     print(f"\nWrote {cfg.PREDICTIONS_CSV.relative_to(cfg.REPO_ROOT)} "
           f"({len(predictions)} rows, {flagged} flagged)")
+
+    classified = classify_notes(analysis.export)
+    cfg.NOTE_CLASSIFICATIONS_CSV.parent.mkdir(parents=True, exist_ok=True)
+    to_note_classifications_csv(classified).to_csv(
+        cfg.NOTE_CLASSIFICATIONS_CSV, index=False
+    )
+    agreement = classified["methods_agree"].mean()
+    print(f"Wrote {cfg.NOTE_CLASSIFICATIONS_CSV.relative_to(cfg.REPO_ROOT)} "
+          f"({len(classified)} rows, {agreement:.1%} method agreement)")
+
+    print("\nWhy the extra hours happened:")
+    for category, count in classified["category"].value_counts().items():
+        print(f"  {count:5}  {category}")
+
+    print("\nWho carries the cost:")
+    for bucket, count in classified["who_pays"].value_counts().items():
+        print(f"  {count:5}  {bucket}")
 
     top = analysis.predictions.merge(
         analysis.export["employees"][["employee_id", "full_name", "primary_site_id"]],
