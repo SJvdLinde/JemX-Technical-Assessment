@@ -10,6 +10,12 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[2]
 DATA_DIR = REPO_ROOT / "data"
 
+# Submission deliverables. Kept together rather than scattered in the repo root,
+# and pointed at from the README so a reviewer can still find them immediately.
+OUTPUT_DIR = REPO_ROOT / "outputs"
+PREDICTIONS_CSV = OUTPUT_DIR / "predictions.csv"
+NOTE_CLASSIFICATIONS_CSV = OUTPUT_DIR / "note_classifications.csv"
+
 # --- The seven files a client export always contains. -----------------------
 EXPECTED_FILES: dict[str, list[str]] = {
     "shifts": [
