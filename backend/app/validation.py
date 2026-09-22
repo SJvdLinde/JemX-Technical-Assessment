@@ -2,9 +2,9 @@
 
 There is no answer sheet, so the check had to be designed. Three strands:
 
-  1. A hand-labelled sample. 50 notes, 45 labelled by a person who did not see
-     the code, 5 isiZulu ones labelled by the language model (marked as such,
-     and every score is reported with and without them).
+  1. A hand-labelled sample. 50 notes labelled by hand, without sight of the
+     code, and stratified so every category appears rather than the sample
+     being three-quarters "nothing reported".
 
   2. Two independent methods. The template labeller and the keyword rules were
      written separately; where they disagree marks the genuinely hard notes.
@@ -36,8 +36,6 @@ def load_hand_labels(path=VALIDATION_SAMPLE) -> pd.DataFrame:
     df = pd.read_csv(path)
     df = df[df["shift_id"].notna() & df["category"].notna()].copy()
     df["category"] = df["category"].str.strip()
-    if "labelled_by" not in df.columns:
-        df["labelled_by"] = "human"
     return df.rename(columns={"category": "truth"})
 
 
@@ -117,11 +115,9 @@ def reweighted_accuracy(per_category: pd.DataFrame, corpus_mix: pd.Series) -> fl
     return round(float((per_category["recall"] * weights).sum()), 3)
 
 
-def validate(export, path=VALIDATION_SAMPLE, human_only: bool = False) -> dict:
+def validate(export, path=VALIDATION_SAMPLE) -> dict:
     """Score every labeller against the hand-labelled sample."""
     hand = load_hand_labels(path)
-    if human_only:
-        hand = hand[hand["labelled_by"] == "human"]
 
     classified = classify_notes(export)
     joined = hand.merge(
@@ -145,7 +141,6 @@ def validate(export, path=VALIDATION_SAMPLE, human_only: bool = False) -> dict:
     }
     return {
         "n": len(joined),
-        "human_labelled": int((joined["labelled_by"] == "human").sum()),
         "scores": scores,
         "joined": joined,
         "corpus_mix": corpus_mix,

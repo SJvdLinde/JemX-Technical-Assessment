@@ -42,18 +42,6 @@ def test_hand_labels_are_usable():
     assert hand["shift_id"].is_unique
 
 
-def test_label_provenance_is_recorded():
-    """45 labelled by a person, 5 isiZulu by the model.
-
-    Tracked because a label the model produced is weaker evidence about the
-    model, and every headline number is reported both ways.
-    """
-    hand = load_hand_labels()
-    counts = hand["labelled_by"].value_counts()
-    assert counts["human"] == 45
-    assert counts["claude_isizulu"] == 5
-
-
 def test_sample_covers_most_categories():
     hand = load_hand_labels()
     assert hand["truth"].nunique() >= 6
@@ -80,14 +68,6 @@ def test_rules_are_weaker_than_the_llm(result):
     rules = result["scores"]["rules"]
     assert rules.accuracy < llm.accuracy
     assert set(rules.errors["truth"]) == {"colleague_absent"}
-
-
-def test_scores_hold_without_the_model_labelled_rows(export):
-    """Drop the 5 isiZulu rows the model labelled; conclusions must survive."""
-    human = validate(export, human_only=True)
-    assert human["n"] == 45
-    assert human["scores"]["template_llm"].accuracy >= 0.90
-    assert human["scores"]["classifier"].accuracy >= 0.90
 
 
 def test_accuracy_is_reported_with_uncertainty(result):

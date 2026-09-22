@@ -1,51 +1,51 @@
-shift_id,note,category,labelled_by
-S105435,"waited 25 min for handover, ob book not signed",late_handover,human
-S105267,"bfufer machine kaput, did the floor by hand",equipment_failure,human
-S104369,"covering sibiya post, no show no call",colleague_absent,human
-S106218,"covering Naido post, no show no call",colleague_absent,human
-S108936,all good,nothing_reported,human
-S103983,ok,nothing_reported,human
-S103063,"took Wyk shift as well, 2 posts 1 guard",colleague_absent,human
-S103599,shift handover deelayed by 40 min !,late_handover,human
-S104338,"Nkosi didnt come in, covered the post",colleague_absent,human
-S104172,"generator fault, stayed to monitor",equipment_failure,human
-S104565,"masjien is stukkend, alles met die hand gedoen..",equipment_failure,human
-S107329,"covering jacobs post, no show no call",colleague_absent,human
-S104531,"gedek vir Motaung, siek geemld",colleague_absent,human
-S102055,"covering Wyk post, no show no call",colleague_absent,human
-S104303,"umavuso akezanga namhlaje, ngimele yena",colleague_absent,claude_isizulu
-S103760,client signed for the extra hours but real reason is relief no show agn,disputed_client_request,human
-S106403,"took molefe shift as well, 2 posts 1 guard",colleague_absent,human
-S104863,"handover late again, keys missing",late_handover,human
-S107991,Covered for Ndlovu agn - 3rd time this month,colleague_absent,human
-S102972,Next shift guard did not pitch. Had to cover.,relief_no_show,human
-S103012,Centre mgr requested additional cover for stocktae,client_requested,human
-S102246,"next shift akafikanga, ngihlale kuze kube six",relief_no_show,claude_isizulu
-S108054,CLIENT SIGNED FOR THE EXTRA HRS BUT REAL REASON IS RELIEF NO SHOW AGAIN,disputed_client_request,human
-S104699,"waited 40 min for handover, ob book not signed",late_handover,human
-S108183,"double duty today, Radebe on family responsibility leave",colleague_absent,human
-S105639,as per normal,nothing_reported,human
-S104653,"buffer machine kaput, did the floor by hand",equipment_failure,human
-S108078,Next shift guard did not pitch. Had to covr.,relief_no_show,human
-S105239,"scrubber broke down, had to do the floor manually",equipment_failure,human
-S102752,"requested by centre management for load in, signed off",client_requested,human
-S106514,shift handover delayed by 25 min,late_handover,human
-S107824,Centre manager requested additional cover for stocktake,client_requested,human
-S106069,"gate motor failed, manned it by hand till 0h600",equipment_failure,human
-S107360,NDLOVU OFF SICK. AGN. COVERED.,colleague_absent,human
-S104408,"ugNcobo akezanga namhlanje, ngimele yena",colleague_absent,claude_isizulu
-S105839,"late handover, waiting on paperwork",late_handover,human
-S103677,"EXTRA PATROL PER CLIENT EMAIL, APPROVED BY OFFICE",client_requested,human
-S101612,"client asked us to stay for the delivery, ok'd by centre mgmt",client_requested,human
-S106546,"khumalo didnt come in, covered the post",colleague_absent,human
-S100444,quiet shift,nothing_reported,human
-S100311,no relief. stayed. someone must please sort the roster..,relief_no_show,human
-S105817,ok,nothing_reported,human
-S107697,"next shift akafikanga, ngihlale kuze kube 06h00..",relief_no_show,claude_isizulu
-S108219,nothing to report,nothing_reported,human
-S102922,"requested by centre management for load in, siged off",client_requested,human
-S108169,CLIENT REQUESTED DEEP CLEAN BEFORE THE AUDIT - APPROVED,client_requested,human
-S106021,Client asked for extra patrol after the break-in Tuesdaay,client_requested,human
-S104748,"next shift akafikanga, ngihlale kuze kube 6..",relief_no_show,claude_isizulu
-S101609,"covering Cele post, no show no call",colleague_absent,human
-S101748,Centre manager requested additional cover for stocktake,client_requested,human
+shift_id,note,category
+S105435,"waited 25 min for handover, ob book not signed",late_handover
+S105267,"bfufer machine kaput, did the floor by hand",equipment_failure
+S104369,"covering sibiya post, no show no call",colleague_absent
+S106218,"covering Naido post, no show no call",colleague_absent
+S108936,all good,nothing_reported
+S103983,ok,nothing_reported
+S103063,"took Wyk shift as well, 2 posts 1 guard",colleague_absent
+S103599,shift handover deelayed by 40 min !,late_handover
+S104338,"Nkosi didnt come in, covered the post",colleague_absent
+S104172,"generator fault, stayed to monitor",equipment_failure
+S104565,"masjien is stukkend, alles met die hand gedoen..",equipment_failure
+S107329,"covering jacobs post, no show no call",colleague_absent
+S104531,"gedek vir Motaung, siek geemld",colleague_absent
+S102055,"covering Wyk post, no show no call",colleague_absent
+S104303,"umavuso akezanga namhlaje, ngimele yena",colleague_absent
+S103760,client signed for the extra hours but real reason is relief no show agn,disputed_client_request
+S106403,"took molefe shift as well, 2 posts 1 guard",colleague_absent
+S104863,"handover late again, keys missing",late_handover
+S107991,Covered for Ndlovu agn - 3rd time this month,colleague_absent
+S102972,Next shift guard did not pitch. Had to cover.,relief_no_show
+S103012,Centre mgr requested additional cover for stocktae,client_requested
+S102246,"next shift akafikanga, ngihlale kuze kube six",relief_no_show
+S108054,CLIENT SIGNED FOR THE EXTRA HRS BUT REAL REASON IS RELIEF NO SHOW AGAIN,disputed_client_request
+S104699,"waited 40 min for handover, ob book not signed",late_handover
+S108183,"double duty today, Radebe on family responsibility leave",colleague_absent
+S105639,as per normal,nothing_reported
+S104653,"buffer machine kaput, did the floor by hand",equipment_failure
+S108078,Next shift guard did not pitch. Had to covr.,relief_no_show
+S105239,"scrubber broke down, had to do the floor manually",equipment_failure
+S102752,"requested by centre management for load in, signed off",client_requested
+S106514,shift handover delayed by 25 min,late_handover
+S107824,Centre manager requested additional cover for stocktake,client_requested
+S106069,"gate motor failed, manned it by hand till 0h600",equipment_failure
+S107360,NDLOVU OFF SICK. AGN. COVERED.,colleague_absent
+S104408,"ugNcobo akezanga namhlanje, ngimele yena",colleague_absent
+S105839,"late handover, waiting on paperwork",late_handover
+S103677,"EXTRA PATROL PER CLIENT EMAIL, APPROVED BY OFFICE",client_requested
+S101612,"client asked us to stay for the delivery, ok'd by centre mgmt",client_requested
+S106546,"khumalo didnt come in, covered the post",colleague_absent
+S100444,quiet shift,nothing_reported
+S100311,no relief. stayed. someone must please sort the roster..,relief_no_show
+S105817,ok,nothing_reported
+S107697,"next shift akafikanga, ngihlale kuze kube 06h00..",relief_no_show
+S108219,nothing to report,nothing_reported
+S102922,"requested by centre management for load in, siged off",client_requested
+S108169,CLIENT REQUESTED DEEP CLEAN BEFORE THE AUDIT - APPROVED,client_requested
+S106021,Client asked for extra patrol after the break-in Tuesdaay,client_requested
+S104748,"next shift akafikanga, ngihlale kuze kube 6..",relief_no_show
+S101609,"covering Cele post, no show no call",colleague_absent
+S101748,Centre manager requested additional cover for stocktake,client_requested

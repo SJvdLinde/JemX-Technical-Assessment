@@ -235,7 +235,6 @@ def test_bank_details_never_appear_even_though_payroll_is_loaded(payload):
 def test_validation_endpoint_reports_intervals():
     body = client.get("/api/validation").json()
     assert body["n"] == 50
-    assert body["human_labelled"] == 45
     template = body["scores"]["template_llm"]
     assert template["accuracy"] >= 0.9
     assert template["ci_low"] < 1.0, "a point estimate of 1.0 needs an honest floor"

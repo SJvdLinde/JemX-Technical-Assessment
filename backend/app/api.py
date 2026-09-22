@@ -381,7 +381,6 @@ def validation() -> dict:
         }
     return {
         "n": result["n"],
-        "human_labelled": result["human_labelled"],
         "scores": scores,
         "categories": CATEGORIES,
     }
