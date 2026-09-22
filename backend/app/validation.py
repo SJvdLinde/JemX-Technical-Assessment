@@ -119,7 +119,7 @@ def validate(export, path=VALIDATION_SAMPLE) -> dict:
     """Score every labeller against the hand-labelled sample."""
     hand = load_hand_labels(path)
 
-    classified = classify_notes(export)
+    classified = classify_notes(export, train_classifier=True)
     joined = hand.merge(
         classified[["shift_id", "category", "rules_category", "model_category"]],
         on="shift_id", how="left", validate="one_to_one",

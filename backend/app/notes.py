@@ -237,6 +237,7 @@ class TemplateLabeller:
 
     surnames: set[str]
     templates: list[tuple[str, str]]
+    _cached_matchers: list | None = None
 
     def _skeleton(self, text: str) -> str:
         return strip_names(normalise(text), self.surnames)
@@ -247,14 +248,37 @@ class TemplateLabeller:
             return NOTHING_REPORTED, 1.0, ""
 
         best_score, best_cat, best_template = 0.0, UNCLEAR, ""
-        for template, category in self.templates:
-            score = difflib.SequenceMatcher(None, skeleton, template).ratio()
+        for matcher, template, category in self._matchers():
+            matcher.set_seq1(skeleton)
+            # `real_quick_ratio` and `quick_ratio` are cheap upper bounds on the
+            # real ratio -- length-based, then character-count-based. If either
+            # cannot beat the best score so far, the expensive match is skipped.
+            # This is the same trick `difflib.get_close_matches` uses, and it
+            # removes most of the ~51,000 comparisons this loop would otherwise do.
+            if (matcher.real_quick_ratio() <= best_score
+                    or matcher.quick_ratio() <= best_score):
+                continue
+            score = matcher.ratio()
             if score > best_score:
                 best_score, best_cat, best_template = score, category, template
 
         if best_score < TEMPLATE_MATCH_THRESHOLD:
             return UNCLEAR, best_score, best_template
         return best_cat, best_score, best_template
+
+    def _matchers(self):
+        """One matcher per template, built once.
+
+        `SequenceMatcher` caches an index of its second sequence, so holding the
+        template as seq2 and swapping the note into seq1 avoids rebuilding that
+        index for every note. Worth ~2x on this corpus.
+        """
+        if self._cached_matchers is None:
+            self._cached_matchers = [
+                (difflib.SequenceMatcher(None, "", template), template, category)
+                for template, category in self.templates
+            ]
+        return self._cached_matchers
 
     def label(self, notes: pd.Series) -> pd.DataFrame:
         """Label a series of notes, caching by skeleton so typo families
@@ -431,7 +455,7 @@ CLASSIFIER_CONFIDENCE_THRESHOLD = 0.60
 
 def classify_notes(
     export,
-    train_classifier: bool = True,
+    train_classifier: bool | None = None,
     use_llm: bool = True,
 ) -> pd.DataFrame:
     """Label every note, through the cascade.
@@ -463,6 +487,14 @@ def classify_notes(
 
     unplaced = out["match_score"] < TEMPLATE_MATCH_THRESHOLD
 
+    # Gate 2 exists for notes gate 1 could not place. Fitting the classifier is
+    # the most expensive step in the whole pipeline (~2.8s of 4.3s), so when
+    # nothing is unplaced -- which is every note in the shipped corpus -- skip it
+    # entirely. Pass `train_classifier=True` to force it, as the tests that check
+    # distillation fidelity do.
+    if train_classifier is None:
+        train_classifier = bool(unplaced.any())
+
     if train_classifier:
         # Train ONLY on notes the template placed confidently. Including the
         # unplaced ones would teach the model that they are `unclear`, and it
@@ -479,7 +511,7 @@ def classify_notes(
         out.loc[rescued, "source"] = "classifier"
 
     # Gate 3: still unplaced. Ask the LLM if we can, else leave it `unclear`.
-    stranded = out["match_score"] < TEMPLATE_MATCH_THRESHOLD
+    stranded = unplaced.copy()
     if train_classifier:
         stranded &= out["source"] != "classifier"
 

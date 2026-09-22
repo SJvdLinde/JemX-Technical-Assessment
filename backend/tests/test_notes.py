@@ -40,7 +40,9 @@ def labeller(export):
 
 @pytest.fixture(scope="module")
 def classified(export):
-    return classify_notes(export)
+    # Force the classifier: production skips fitting it when every note clears
+    # gate 1, but these tests check distillation fidelity, which needs it.
+    return classify_notes(export, train_classifier=True)
 
 
 def label(labeller, text: str) -> str:
