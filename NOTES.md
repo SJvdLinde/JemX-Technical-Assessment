@@ -1,5 +1,8 @@
 # Notes
 
+`predictions.csv` and `note_classifications.csv` are in `outputs/`. The
+[README](README.md) lists them, along with how to run everything.
+
 ## Assumptions
 
 **Overnight shifts.** A clock-out earlier than the clock-in means the shift crossed midnight. All of them also belong to security guards, so that makes sense.
