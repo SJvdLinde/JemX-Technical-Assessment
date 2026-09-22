@@ -48,7 +48,26 @@ def payload():
 # --------------------------------------------------------------------------
 
 def test_health():
-    assert client.get("/api/health").json() == {"status": "ok"}
+    body = client.get("/api/health").json()
+    assert body["status"] == "ok"
+
+
+def test_default_analysis_is_cached():
+    """The shipped export never changes, so it is built once.
+
+    Recomputing it per request cost ~5s, nearly all of it re-classifying the same
+    2,117 notes, which is what makes a cold start hurt on a free host.
+    """
+    import time
+
+    client.get("/api/analyse")            # ensure warm
+    start = time.perf_counter()
+    first = client.get("/api/analyse").json()
+    elapsed = time.perf_counter() - start
+
+    assert elapsed < 0.5, f"cached response took {elapsed:.2f}s"
+    assert client.get("/api/health").json()["warm"] is True
+    assert first == client.get("/api/analyse").json()
 
 
 def test_default_analysis_has_every_section(payload):

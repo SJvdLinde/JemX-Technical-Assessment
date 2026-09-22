@@ -21,6 +21,8 @@ from typing import Any
 
 import numpy as np
 import pandas as pd
+from contextlib import asynccontextmanager
+
 from fastapi import FastAPI, File, HTTPException, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
@@ -40,10 +42,21 @@ from .validation import validate
 
 MAX_UPLOAD_BYTES = 32 * 1024 * 1024
 
+@asynccontextmanager
+async def lifespan(_app: FastAPI):
+    """Warm the cache at boot rather than charging it to the first visitor."""
+    try:
+        default_payload()
+    except Exception:  # pragma: no cover - never block startup on this
+        pass
+    yield
+
+
 app = FastAPI(
     title="Jem Ops Room",
     description="Who will breach the 10-hour overtime cap by Sunday.",
     version="1.0.0",
+    lifespan=lifespan,
 )
 
 # The frontend is deployed separately, so it is a cross-origin caller.
@@ -320,17 +333,31 @@ async def export_error_handler(_request, exc: ExportError):
     return JSONResponse(status_code=400, content={"detail": str(exc)})
 
 
+# The shipped export never changes, so its analysis is computed once and served
+# from memory. Rebuilding it per request cost ~5s, nearly all of it re-classifying
+# the same 2,117 notes -- which is exactly what makes a cold start painful on a
+# free host. Uploads are unaffected; those always recompute.
+_DEFAULT_PAYLOAD: dict | None = None
+
+
+def default_payload() -> dict:
+    global _DEFAULT_PAYLOAD
+    if _DEFAULT_PAYLOAD is None:
+        payload = build_payload(analyse(load_default_export()))
+        assert_no_pii(payload)
+        _DEFAULT_PAYLOAD = payload
+    return _DEFAULT_PAYLOAD
+
+
 @app.get("/api/health")
 def health() -> dict:
-    return {"status": "ok"}
+    return {"status": "ok", "warm": _DEFAULT_PAYLOAD is not None}
 
 
 @app.get("/api/analyse")
 def analyse_default() -> dict:
     """The export that ships with the repo. What the dashboard shows on load."""
-    payload = build_payload(analyse(load_default_export()))
-    assert_no_pii(payload)
-    return payload
+    return default_payload()
 
 
 @app.post("/api/analyse")
